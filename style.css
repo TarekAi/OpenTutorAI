@@ -1,0 +1,100 @@
+/* Full-page gradient background */
+body {
+    background: linear-gradient(to right, #6a0dad, #00f0ff);  /* Purple to Blue gradient */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: #6a0dad; /* Purple */
+    border-color: #6a0dad;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem; /* Smaller padding */
+    font-size: 1rem; /* Smaller font size */
+    width: auto; /* Auto width to prevent full-width */
+    max-width: 300px; /* Set a max width */
+    margin: 0 auto; /* Center the buttons */
+  }
+  
+  .btn-primary:hover {
+    background-color: #5c06a4;
+    border-color: #5c06a4;
+  }
+  
+  .btn-outline-light {
+    color: #fff;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem; /* Smaller padding */
+    font-size: 1rem; /* Smaller font size */
+    width: auto; /* Auto width to prevent full-width */
+    max-width: 300px; /* Set a max width */
+    margin: 0 auto; /* Center the buttons */
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Button spacing */
+  .mt-3, .mt-4 {
+    margin-top: 20px;
+  }
+  
+  /* Ensure buttons do not take full width */
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Animation effects */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+  
+  .display-3 {
+    font-size: 3.5rem;
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  /* Ensure text is centered and padding is adjusted */
+  .text-center {
+    text-align: center;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
