@@ -10,11 +10,21 @@ body {
   color: #fff;
 }
 
+/* Title Styling */
+.display-3 {
+  font-size: 4rem; /* Larger title */
+  font-weight: 600; /* Bolder font */
+  letter-spacing: 1px; /* Added letter spacing for elegance */
+  font-family: 'Roboto', sans-serif; /* More attractive font */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  margin-bottom: 20px;
+}
+
 /* Button Styles */
-.btn-primary {
-  background-color: #6a0dad; /* Purple */
-  border-color: #6a0dad;
-  transition: all 0.3s ease;
+.btn-primary, .btn-outline-light {
+  display: flex;
+  align-items: center; /* Align icons and text vertically */
+  justify-content: center; /* Align icons and text horizontally */
   padding: 0.75rem 1.5rem; /* Larger padding */
   font-size: 1.2rem; /* Larger font size */
   width: auto; /* Auto width to prevent full-width */
@@ -22,33 +32,45 @@ body {
   margin: 0 auto; /* Center the buttons */
   border-radius: 30px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease;
+}
+
+/* Discord Button Specific Styles */
+.btn-discord {
+  background-color: #7289da;  /* Discord Blue */
+  border-color: #7289da;
+  text-decoration: none;
+}
+
+.btn-discord:hover {
+  background-color: #5b6e92;
+  border-color: #5b6e92;
+}
+
+/* Add space between icon and text inside buttons */
+.btn-primary i, .btn-outline-light i, .btn-discord i {
+  margin-right: 10px; /* Adds space between icon and text */
+}
+
+/* Button Styles for Primary and Outline */
+.btn-primary {
+  background-color: #ead8f7; /* Purple */
+  border-color: #bfbec0;
 }
 
 .btn-primary:hover {
-  background-color: #5c06a4;
-  border-color: #5c06a4;
-  transform: translateY(-3px); /* Hover effect - button lift */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+  background-color: #c0bdc4;
+  border-color: #827d86;
 }
 
 .btn-outline-light {
   color: #fff;
   border: 2px solid #fff;
-  transition: all 0.3s ease;
-  padding: 0.75rem 1.5rem; /* Larger padding */
-  font-size: 1.2rem; /* Larger font size */
-  width: auto; /* Auto width to prevent full-width */
-  max-width: 320px; /* Set a max width */
-  margin: 0 auto; /* Center the buttons */
-  border-radius: 30px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .btn-outline-light:hover {
   background-color: #fff;
   color: #000;
-  transform: translateY(-3px); /* Hover effect - button lift */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
 }
 
 /* Button spacing */
@@ -85,11 +107,6 @@ body {
 
 .fadeInUp {
   animation-name: fadeInUp;
-}
-
-.display-3 {
-  font-size: 4rem; /* Larger title */
-  font-weight: 600; /* Bolder font */
 }
 
 .lead {
@@ -135,4 +152,8 @@ h1, p {
 
 body {
   animation: pulse 6s infinite alternate;
+}
+
+a{
+  text-decoration: none;
 }
